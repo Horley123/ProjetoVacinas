@@ -6,7 +6,7 @@
     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login.LoginActivity">
+    tools:context=".CadastroActivity">
 
 
     <TextView
@@ -18,7 +18,7 @@
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="50dp"
         app:fontFamily="@font/comfortaa"
-        android:text="Cadastro"
+        android:text="@string/cadastro"
         android:textColor="@color/black"
         android:textSize="35sp"
         android:textStyle="normal" />
@@ -48,7 +48,7 @@
         android:layout_marginBottom="10dp"
         android:backgroundTint="#93B6D6"
         app:fontFamily="@font/comfortaa"
-        android:text="CADASTRAR"
+        android:text="@string/cadastrar"
         android:textColor="#FDFDFD"
         tools:ignore="TextContrastCheck" />
 
@@ -62,8 +62,9 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:ems="10"
-        android:hint="Senha"
-        android:inputType="textPassword" />
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:autofillHints="" />
 
 
 </RelativeLayout>
