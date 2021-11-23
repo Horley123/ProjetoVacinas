@@ -2,69 +2,220 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
-    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CadastroActivity">
 
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="50dp"
-        app:fontFamily="@font/comfortaa"
-        android:text="@string/cadastro"
-        android:textColor="@color/black"
-        android:textSize="35sp"
-        android:textStyle="normal" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress3"
-        app:fontFamily="@font/comfortaa"
-        android:layout_width="389dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="130dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:hint="@string/email"
-        android:importantForAutofill="no"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="392dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="400dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:backgroundTint="#93B6D6"
-        app:fontFamily="@font/comfortaa"
-        android:text="@string/cadastrar"
-        android:textColor="#FDFDFD"
-        tools:ignore="TextContrastCheck" />
+            <ImageButton
+                android:id="@+id/btn_voltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/voltar_icon"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/logout_icon"
+                tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="389dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="210dp"
-        app:fontFamily="@font/comfortaa"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:hint="@string/senha"
-        android:inputType="textPassword"
-        android:autofillHints="" />
+            <TextView
+                android:id="@+id/textVCadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="50dp"
+                android:text="@string/cadastro"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="normal"
+                app:fontFamily="@font/comfortaa" />
+
+            <EditText
+                android:id="@+id/input_nome"
+                android:layout_width="389dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:fontFamily="@font/comfortaa"
+                android:hint="@string/nome"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="18dp"
+                android:textColorHint="#494646"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="389dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:fontFamily="@font/comfortaa"
+                android:hint="@string/email"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:padding="18dp"
+                android:textColorHint="#494646"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/input_senha2"
+                android:layout_width="389dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:fontFamily="@font/comfortaa"
+                android:hint="@string/senha"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:padding="18dp"
+                android:textColorHint="#494646"
+                android:textSize="15sp"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/input_idade"
+                android:layout_width="389dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:fontFamily="@font/comfortaa"
+                android:hint="@string/idade"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="18dp"
+                android:textColorHint="#494646"
+                android:textSize="15sp"
+                android:autofillHints="" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewtext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/comfortaa"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/informa_es_da_sua_vacina_o"
+                android:textAlignment="center"
+                android:textColor="#2B2A2A"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/input_UBS"
+                android:layout_width="389dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:fontFamily="@font/comfortaa"
+                android:hint="@string/nome_da_ubs"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="18dp"
+                android:textColorHint="#494646"
+                android:textSize="15sp"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/input_marca"
+                android:layout_width="389dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:fontFamily="@font/comfortaa"
+                android:hint="@string/marca"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="18dp"
+                android:textColorHint="#494646"
+                android:textSize="15sp"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/input_dose"
+                android:layout_width="389dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:fontFamily="@font/comfortaa"
+                android:hint="@string/dose_tomada"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="18dp"
+                android:textColorHint="#494646"
+                android:textSize="15sp"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/input_data"
+                android:layout_width="389dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:fontFamily="@font/comfortaa"
+                android:hint="@string/data"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:padding="18dp"
+                android:textColorHint="#494646"
+                android:textSize="15sp"
+                android:autofillHints="" />
+
+            <Button
+                android:id="@+id/btn_cadastrar"
+                android:layout_width="392dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#93B6D6"
+                android:text="@string/cadastrar"
+                android:textColor="#FDFDFD"
+                app:fontFamily="@font/comfortaa_bold"
+                tools:ignore="TextContrastCheck" />
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </RelativeLayout>
+
+
+

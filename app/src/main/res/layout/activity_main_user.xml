@@ -10,6 +10,7 @@
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/menu_i"
         app:srcCompat="@drawable/ic_baseline_dehaze_24"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -24,158 +25,459 @@
         android:textColor="#1C1B1B"
         android:textSize="18sp" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp"
-        android:fontFamily="@font/comfortaa"
-        android:text="@string/informa_es_da_sua_vacina_o"
-        android:textColor="#2B2A2A"
-        android:textSize="16sp"
-        app:fontFamily="@font/comfortaa" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="300dp"
-        android:layout_marginTop="25dp"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="250dp">
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            app:cardBackgroundColor="#7E7E73"
-            app:cardCornerRadius="250dp">
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:scaleType="centerCrop"
-                tools:srcCompat="@mipmap/prof_round" />
-
-        </com.google.android.material.card.MaterialCardView>
-
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="375dp"
-        android:layout_height="126dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="180dp"
-        app:cardBackgroundColor="#AFAFB3"
-        app:cardCornerRadius="15dp">
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:orientation="vertical">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="25dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="250dp">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="#7E7E73"
+                    app:cardCornerRadius="250dp">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="centerCrop"
+                        tools:srcCompat="@mipmap/prof_round" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+                </com.google.android.material.card.MaterialCardView>
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            </com.google.android.material.card.MaterialCardView>
 
-    </com.google.android.material.card.MaterialCardView>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/comfortaa"
+                android:gravity="center_horizontal"
+                android:text="@string/suas_informa_es_de_perfil"
+                android:textColor="#2B2A2A"
+                android:textSize="18sp"
+                app:fontFamily="@font/comfortaa" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="330dp"
-        android:fontFamily="@font/comfortaa"
-        android:text="@string/confirme_sua_segunda_dose"
-        android:textColor="#2B2A2A"
-        android:textSize="16sp" />
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="375dp"
+                android:layout_height="166dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                app:cardBackgroundColor="#AFAFB3"
+                app:cardCornerRadius="15dp">
 
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="375dp"
-        android:layout_height="126dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="380dp"
-        app:cardBackgroundColor="#7896B3"
-        app:cardCornerRadius="15dp">
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:padding="5dp">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+                    <TableRow>
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:padding="10sp"
+                            android:text="@string/nomed"
+                            android:textColor="#424242"
+                            android:textSize="16sp" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/row_nome"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.8"
+                            android:fontFamily="@font/comfortaa"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+                        <ImageButton
+                            android:id="@+id/imageButton2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.3"
+                            android:background="#00000000"
+                            android:contentDescription="@string/delete_icon"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/delete_icon"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+                        <ImageButton
+                            android:id="@+id/imageButton3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.3"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="@string/edit_icon"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/edit_icon"
+                            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+                    </TableRow>
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+                    <TableRow>
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:padding="10sp"
+                            android:text="@string/emaild"
+                            android:textColor="#424242"
+                            android:textSize="16sp" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView45"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/row_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.8"
+                            android:fontFamily="@font/comfortaa"
+                            android:gravity="center_horizontal"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
 
-    </com.google.android.material.card.MaterialCardView>
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.3"
+                            android:background="#00000000"
+                            android:contentDescription="@string/delete_icon"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/delete_icon"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.3"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="@string/edit_icon"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/edit_icon"
+                            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,TouchTargetSizeCheck" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:padding="10sp"
+                            android:text="@string/idaded"
+                            android:textColor="#424242"
+                            android:textSize="16sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/row_idade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.8"
+                            android:fontFamily="@font/comfortaa"
+                            android:gravity="center_horizontal"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.3"
+                            android:background="#00000000"
+                            android:contentDescription="@string/delete_icon"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/delete_icon"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.3"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="@string/edit_icon"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/edit_icon"
+                            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,TouchTargetSizeCheck" />
+                    </TableRow>
+
+                </TableLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/comfortaa"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="@string/suas_informa_es_de_vacina_o"
+                android:textColor="#2B2A2A"
+                android:textSize="18sp"
+                tools:ignore="TextContrastCheck" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="375dp"
+                android:layout_height="186dp"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="#7896B3"
+                app:cardCornerRadius="15dp" >
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:padding="5dp">
+
+                    <TableRow>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:padding="10sp"
+                            android:text="@string/ubs"
+                            android:textColor="#424242"
+                            android:textSize="16sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/row_ubs"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.8"
+                            android:fontFamily="@font/comfortaa"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.3"
+                            android:background="#00000000"
+                            android:contentDescription="@string/delete_icon"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/delete_icon"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.3"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="@string/edit_icon"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/edit_icon"
+                            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:padding="10sp"
+                            android:text="@string/marcad"
+                            android:textColor="#424242"
+                            android:textSize="16sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/row_marca"
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.8"
+                            android:fontFamily="@font/comfortaa"
+                            android:gravity="center_horizontal"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.3"
+                            android:background="#00000000"
+                            android:contentDescription="@string/delete_icon"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/delete_icon"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.3"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="@string/edit_icon"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/edit_icon"
+                            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,TouchTargetSizeCheck" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:padding="10sp"
+                            android:text="@string/dosed"
+                            android:textColor="#424242"
+                            android:textSize="16sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/row_dose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.8"
+                            android:fontFamily="@font/comfortaa"
+                            android:gravity="center_horizontal"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.3"
+                            android:background="#00000000"
+                            android:contentDescription="@string/delete_icon"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/delete_icon"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.3"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="@string/edit_icon"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/edit_icon"
+                            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,TouchTargetSizeCheck" />
+                    </TableRow>
+                    <TableRow>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:padding="10sp"
+                            android:text="@string/datad"
+                            android:textColor="#424242"
+                            android:textSize="16sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/row_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.8"
+                            android:fontFamily="@font/comfortaa"
+                            android:gravity="center_horizontal"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.3"
+                            android:background="#00000000"
+                            android:contentDescription="@string/delete_icon"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/delete_icon"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.3"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="@string/edit_icon"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/edit_icon"
+                            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,TouchTargetSizeCheck" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/btnIrLogin"
+                android:layout_width="392dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:backgroundTint="#93B6D6"
+                android:text="@string/tela_de_login"
+                android:textColor="#FDFDFD"
+                app:fontFamily="@font/comfortaa_bold"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/btnIr"
+                android:layout_width="392dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#93B6D6"
+                android:text="@string/tela_de_cadastro"
+                android:textColor="#FDFDFD"
+                app:fontFamily="@font/comfortaa_bold"
+                tools:ignore="TextContrastCheck" />
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </RelativeLayout>

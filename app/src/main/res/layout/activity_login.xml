@@ -6,7 +6,7 @@
     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="LoginActivity">
+    tools:context=".LoginActivity">
 
 
     <TextView
@@ -14,28 +14,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="50dp"
         android:text="@string/login"
         android:textColor="@color/black"
-        app:fontFamily="@font/comfortaa"
         android:textSize="35sp"
-        android:textStyle="normal" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="394dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="130dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        app:boxBackgroundColor="#222121"
-        app:boxBackgroundMode="filled"
-        app:boxStrokeColor="#151515"
-        app:boxStrokeWidth="3dp">
-
-    </com.google.android.material.textfield.TextInputLayout>
+        android:textStyle="normal"
+        app:fontFamily="@font/comfortaa" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress3"
@@ -46,8 +32,8 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:ems="10"
-        android:hint="@string/email"
         android:fontFamily="@font/comfortaa"
+        android:hint="@string/email"
         android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
@@ -55,18 +41,18 @@
         android:textColorHint="#494646" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress4"
+        android:id="@+id/editT_senha"
         android:layout_width="389dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="220dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:background="#30ffffff"
         android:ems="10"
+        android:fontFamily="@font/comfortaa"
         android:hint="@string/senha"
         android:importantForAutofill="no"
-        android:inputType="textEmailAddress"
+        android:inputType="textPassword"
         android:minHeight="48dp"
         android:padding="18dp"
         android:textColorHint="#494646" />
@@ -74,29 +60,29 @@
     <Button
         android:id="@+id/button8"
         android:layout_width="392dp"
-        android:layout_height="58dp"
+        android:layout_height="66dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="500dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#93B6D6"
-        app:fontFamily="@font/comfortaa"
         android:text="@string/entrar"
         android:textColor="#FDFDFD"
+        app:fontFamily="@font/roboto_black"
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/btn_se_cadastrar"
         android:layout_width="393dp"
         android:layout_height="66dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="380dp"
+        android:layout_marginTop="580dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#BFBFC2"
         android:text="@string/ainda_n_o_possui_cadastro_clique_aqui"
-        tools:ignore="TextContrastCheck"
-        app:fontFamily="@font/comfortaa"/>
+        app:fontFamily="@font/roboto_black"
+        tools:ignore="TextContrastCheck" />
 
 
 </RelativeLayout>
