@@ -62,4 +62,9 @@
     <string name="dose_tomada">Dose tomada</string>
     <string name="data">Data</string>
     <string name="image">image</string>
+    <string name="alterar_dados">Alterar dados</string>
+    <string name="excluir_dados">Excluir dados</string>
+    <string name="alterar_dadosb">ALTERAR DADOS</string>
+    <string name="editar">EDITAR</string>
+    <string name="Alterar">Alterar</string>
 </resources>

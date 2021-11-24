@@ -3,29 +3,24 @@ package com.example.vacinas;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatTextView;
-import androidx.core.app.ComponentActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.*;
 import android.view.*;
 
 
 public class MainActivityUser extends AppCompatActivity {
 
-    Button btnTelaCadastro;
-    Button btnTelaLogin;
-    Intent iTelaCadastro;
-    Intent iTelaLogin;
     Cursor c, d;
     SQLiteDatabase db;
     AppCompatTextView nome, email, idade, ubs, marca, dose, data;
     Bundle bundle;
     int idUser, idVac;
+    Button btnEditar, btnExcluir;
+    Intent iTelaEditar, iTelaLogin;
 
 
     @Override
@@ -33,17 +28,8 @@ public class MainActivityUser extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_user);
 
-        btnTelaCadastro = findViewById(R.id.btnIr);
-        btnTelaLogin =  findViewById(R.id.btnIrLogin);
-
-        btnTelaLogin.setOnClickListener(v -> {
-            iTelaLogin = new Intent(MainActivityUser.this, LoginActivity.class);
-            startActivity(iTelaLogin);
-        });
-        btnTelaCadastro.setOnClickListener(v -> {
-            iTelaCadastro = new Intent(MainActivityUser.this, CadastroActivity.class);
-            startActivity(iTelaCadastro);
-        });
+        btnEditar = findViewById(R.id.btn_editar);
+        btnExcluir = findViewById(R.id.btn_excluir);
 
         nome = findViewById(R.id.row_nome);
         email =  findViewById(R.id.row_email);
@@ -109,7 +95,23 @@ public class MainActivityUser extends AppCompatActivity {
             MostrarMensagem("Erro: " + e.toString());
 
         }
+
+        btnExcluir.setOnClickListener(v -> {
+            try{
+                db.delete("usuarios","idUser = ?", new String[]{String.valueOf(idUser)});
+                db.delete("Vacina","idR = ?", new String[]{String.valueOf(idUser)});
+
+                MostrarMensagem("Conta excluída com sucesso!");
+
+                iTelaLogin = new Intent(MainActivityUser.this, LoginActivity.class);
+                startActivity(iTelaLogin);
+
+            }catch(Exception e){
+                MostrarMensagem("Erro ao excluir conta: "+ e);
+            }
+        });
     }
+
     public void MostrarMensagem(String str) {
 
         AlertDialog.Builder dialogo = new AlertDialog.Builder(MainActivityUser.this);
