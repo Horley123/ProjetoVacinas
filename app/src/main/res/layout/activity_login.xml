@@ -65,7 +65,7 @@
         android:layout_marginTop="500dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:backgroundTint="#93B6D6"
+        android:backgroundTint="#7896B3"
         android:text="@string/entrar"
         android:textColor="#FDFDFD"
         app:fontFamily="@font/roboto_black"
@@ -79,7 +79,7 @@
         android:layout_marginTop="580dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:backgroundTint="#BFBFC2"
+        android:backgroundTint="#AFAFB3"
         android:text="@string/ainda_n_o_possui_cadastro_clique_aqui"
         app:fontFamily="@font/roboto_black"
         tools:ignore="TextContrastCheck" />
