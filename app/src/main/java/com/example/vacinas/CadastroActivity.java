@@ -106,7 +106,7 @@ public class CadastroActivity extends AppCompatActivity {
                 AlertDialog.Builder dialogo = new
                         AlertDialog.Builder(CadastroActivity.this);
                 dialogo.setTitle("Aviso")
-                        .setMessage(e+"Falha ao cadastra, tente novamente")
+                        .setMessage(e.toString()+"Falha ao cadastra, tente novamente")
                         .setNeutralButton("OK", null)
                         .show();
             }
