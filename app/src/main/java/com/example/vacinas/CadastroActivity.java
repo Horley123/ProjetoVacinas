@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +21,8 @@ public class CadastroActivity extends AppCompatActivity {
     Button btcadastrar;
     SQLiteDatabase db;
     EditText email, senha, nome, ubs, marca, dose, data ,idade;
-    Integer idUser = 0;
+    Integer idUser;
+    Cursor c;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,13 +59,6 @@ public class CadastroActivity extends AppCompatActivity {
                 data = findViewById(R.id.input_data) ;
 
 
-                try{
-                    db = openOrCreateDatabase("dbVacinas", Context.MODE_PRIVATE, null);
-                } catch (Exception e){
-                    MostrarMensagem("Erro: " + e.toString());
-                }
-
-
                 String Cnome = nome.getText().toString();
                 String Cemail = email.getText().toString();
                 String Csenha = senha.getText().toString();
@@ -73,8 +68,23 @@ public class CadastroActivity extends AppCompatActivity {
                     db.execSQL(" insert into usuarios( nome,  email,  senha,idade) " +
                             "values ('"+ Cnome + "', '"+  Cemail +"' , '" + Csenha +"', '"+ Cidade+"')");
 
-                    MostrarMensagem("Dados deusuario  Cadastrados com sucesso");
+                    MostrarMensagem("Dados de usuario  Cadastrados com sucesso");
                 } catch (Exception e){  MostrarMensagem("Erro: " + e.toString());}
+
+                try{
+
+                    c = db.query("usuarios", new String[]
+                                    {"idUser"}, "nome=? AND email =? AND senha =? AND idade=?", new String[]{Cnome, Cemail, Csenha, Cidade},
+                            null, null, null, null);
+
+                    if (c.moveToNext()) {
+                        if (c.getCount() > 0) {
+                            idUser = (c.getInt(0)); // definição do ID retornado do cursor
+                        }
+                    }
+                }catch(Exception e){
+
+                }
 
                 String Cubs = ubs.getText().toString();
                 String Cmarca = marca.getText().toString();
@@ -84,13 +94,11 @@ public class CadastroActivity extends AppCompatActivity {
 
                 try{
 
-
                     db.execSQL(" insert into Vacina( nomeUbs,  marca,  dose,data, idR) " +
                             "values ('"+ Cubs + "', '"+  Cmarca +"' , ' " + Cdose +"', '"+ Cdata+"','" + idR +"')");
                     MostrarMensagem("Dados da vacina  Cadastrados com sucesso");
-                    idUser++;
-                } catch (Exception e){  MostrarMensagem("Erro: " + e.toString());}
-
+                } catch (Exception e){  MostrarMensagem("Erro: " + e.toString());
+                }
 
 
                 AlertDialog.Builder dialogo = new

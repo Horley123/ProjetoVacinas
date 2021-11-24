@@ -24,6 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     boolean verifica;
 
 
+
     public void MostrarMensagem(String str) {
 
         AlertDialog.Builder dialogo = new AlertDialog.Builder(LoginActivity.this);
@@ -79,6 +80,7 @@ public class LoginActivity extends AppCompatActivity {
             if(verifica){
                 MostrarMensagem("Login realizado!");
                 iTelaPrincipal = new Intent(LoginActivity.this, MainActivityUser.class);
+                iTelaPrincipal.putExtra("idUser",idUser);
                 startActivity(iTelaPrincipal);
             }else{
                 MostrarMensagem("Login inválido!");

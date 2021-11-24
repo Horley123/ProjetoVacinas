@@ -3,12 +3,14 @@ package com.example.vacinas;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatTextView;
+import androidx.core.app.ComponentActivity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.*;
 import android.view.*;
 
@@ -22,6 +24,9 @@ public class MainActivityUser extends AppCompatActivity {
     Cursor c, d;
     SQLiteDatabase db;
     AppCompatTextView nome, email, idade, ubs, marca, dose, data;
+    Bundle bundle;
+    int idUser, idVac;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,14 +53,19 @@ public class MainActivityUser extends AppCompatActivity {
         data =  findViewById(R.id.row_data);
         dose =  findViewById(R.id.row_dose);
 
+        if(getIntent().hasExtra("idUser")){
+            bundle = getIntent().getExtras();
+            idUser = bundle.getInt("idUser");
+        }
+
+
         try {
             db = openOrCreateDatabase("dbVacinas",
                     Context.MODE_PRIVATE, null);
 
             c = db.query("usuarios", new String[]
                             {"nome", "email", "idade"},
-                    null, null, null, null, null);
-
+                    "idUser =?", new String[]{String.valueOf(idUser)}, null, null, null);
 
             if (c.getCount() > 0) {
                 c.moveToFirst();
@@ -73,8 +83,8 @@ public class MainActivityUser extends AppCompatActivity {
                 idade.setText(frase);
             }
             d = db.query("Vacina", new String[]
-                            {"nomeUbs", "marca", "data", "dose"},
-                    null, null, null, null, null);
+                            {"nomeUbs", "marca", "data", "dose","idVac"},
+                    "idR =?", new String[]{String.valueOf(idUser)}, null, null, null);
 
 
             if (d.getCount() > 0) {
@@ -84,6 +94,7 @@ public class MainActivityUser extends AppCompatActivity {
                 marca.setText(d.getString(1));
                 data.setText(d.getString(2));
                 dose.setText(d.getString(3));
+                idVac = d.getInt(4);
 
 
             } else {
@@ -107,4 +118,6 @@ public class MainActivityUser extends AppCompatActivity {
         dialogo.setMessage(str);
         dialogo.show();
     }
+
+
 }
