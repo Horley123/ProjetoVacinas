@@ -23,4 +23,13 @@
 
     <style name="Theme.Vacinas.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="Theme.Vacinas.NoActionBar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Vacinas.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Vacinas.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

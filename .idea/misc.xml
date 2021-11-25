@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/drawable/delete_icon.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/drawable/edit_icon.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/drawable/ic_baseline_dehaze_24.xml" value="0.23541666666666666" />
         <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/drawable/ic_launcher_background.xml" value="0.23541666666666666" />
         <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/drawable/logout_icon.xml" value="0.23541666666666666" />
@@ -11,7 +13,8 @@
         <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/drawable/profile_background.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/font/comfortaa.xml" value="0.41770833333333335" />
         <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.14089692101740295" />
-        <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/layout/activity_cadastro.xml" value="0.3875" />
+        <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/layout/activity_cadastro.xml" value="0.33" />
+        <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/layout/activity_editar.xml" value="0.5" />
         <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/layout/activity_main2.xml" value="0.36666666666666664" />
@@ -20,6 +23,7 @@
         <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/layout/app_bar_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/layout/content_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/layout/nav_header_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/menu/menu_acoes.xml" value="0.3875" />
         <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/menu/menu_aplicacao.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/kassi/AndroidStudioProjects/ProjetoVacinas/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.27447916666666666" />
