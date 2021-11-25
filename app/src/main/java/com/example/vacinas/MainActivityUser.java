@@ -110,6 +110,11 @@ public class MainActivityUser extends AppCompatActivity {
                 MostrarMensagem("Erro ao excluir conta: "+ e);
             }
         });
+        btnEditar.setOnClickListener(v ->{
+            iTelaEditar = new Intent(MainActivityUser.this, EditarActivity.class);
+            iTelaEditar.putExtra("idUser",idUser);
+            startActivity(iTelaEditar);
+        });
     }
 
     public void MostrarMensagem(String str) {

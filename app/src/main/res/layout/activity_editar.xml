@@ -40,7 +40,7 @@
                 app:fontFamily="@font/comfortaa" />
 
             <EditText
-                android:id="@+id/input_nome"
+                android:id="@+id/input_nomee"
                 android:layout_width="389dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="10dp"
@@ -50,7 +50,6 @@
                 android:ems="10"
                 android:fontFamily="@font/comfortaa"
                 android:hint="@string/nome"
-                android:importantForAutofill="no"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
                 android:padding="18dp"
@@ -58,7 +57,7 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/input_email"
+                android:id="@+id/input_emaile"
                 android:layout_width="389dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="10dp"
@@ -68,7 +67,6 @@
                 android:ems="10"
                 android:fontFamily="@font/comfortaa"
                 android:hint="@string/email"
-                android:importantForAutofill="no"
                 android:inputType="textEmailAddress"
                 android:minHeight="48dp"
                 android:padding="18dp"
@@ -76,7 +74,7 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/input_senha2"
+                android:id="@+id/input_senhae"
                 android:layout_width="389dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="10dp"
@@ -90,11 +88,10 @@
                 android:minHeight="48dp"
                 android:padding="18dp"
                 android:textColorHint="#494646"
-                android:textSize="15sp"
-                android:autofillHints="" />
+                android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/input_idade"
+                android:id="@+id/input_idadee"
                 android:layout_width="389dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="10dp"
@@ -108,11 +105,10 @@
                 android:minHeight="48dp"
                 android:padding="18dp"
                 android:textColorHint="#494646"
-                android:textSize="15sp"
-                android:autofillHints="" />
+                android:textSize="15sp"/>
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/textViewtext"
+                android:id="@+id/textViewtexte"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -125,7 +121,7 @@
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/input_UBS"
+                android:id="@+id/input_UBSe"
                 android:layout_width="389dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="10dp"
@@ -139,11 +135,10 @@
                 android:minHeight="48dp"
                 android:padding="18dp"
                 android:textColorHint="#494646"
-                android:textSize="15sp"
-                android:autofillHints="" />
+                android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/input_marca"
+                android:id="@+id/input_marcae"
                 android:layout_width="389dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="10dp"
@@ -157,10 +152,9 @@
                 android:minHeight="48dp"
                 android:padding="18dp"
                 android:textColorHint="#494646"
-                android:textSize="15sp"
-                android:autofillHints="" />
+                android:textSize="15sp" />
             <EditText
-                android:id="@+id/input_dose"
+                android:id="@+id/input_dosee"
                 android:layout_width="389dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="10dp"
@@ -174,11 +168,10 @@
                 android:minHeight="48dp"
                 android:padding="18dp"
                 android:textColorHint="#494646"
-                android:textSize="15sp"
-                android:autofillHints=""/>
+                android:textSize="15sp"/>
 
             <EditText
-                android:id="@+id/input_data"
+                android:id="@+id/input_datae"
                 android:layout_width="389dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="10dp"
@@ -192,8 +185,7 @@
                 android:minHeight="48dp"
                 android:padding="18dp"
                 android:textColorHint="#494646"
-                android:textSize="15sp"
-                android:autofillHints="" />
+                android:textSize="15sp"/>
 
             <Button
                 android:id="@+id/btn_editar"

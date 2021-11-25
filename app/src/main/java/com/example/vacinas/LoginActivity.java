@@ -78,7 +78,6 @@ public class LoginActivity extends AppCompatActivity {
             }
 
             if(verifica){
-                MostrarMensagem("Login realizado!");
                 iTelaPrincipal = new Intent(LoginActivity.this, MainActivityUser.class);
                 iTelaPrincipal.putExtra("idUser",idUser);
                 startActivity(iTelaPrincipal);

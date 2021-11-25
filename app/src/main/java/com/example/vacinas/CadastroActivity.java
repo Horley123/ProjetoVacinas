@@ -104,12 +104,13 @@ public class CadastroActivity extends AppCompatActivity {
                 AlertDialog.Builder dialogo = new
                         AlertDialog.Builder(CadastroActivity.this);
                 dialogo.setTitle("Aviso")
-                        .setMessage("Banco de dados criado com sucesso !!!!")
+                        .setMessage("Cadastro realizado!")
                         .setNeutralButton("OK", null)
                         .show();
 
-                Intent iTelaCadastrado = new Intent(CadastroActivity.this, MainActivityUser.class);
-                startActivity(iTelaCadastrado);
+                Intent iTelaLogin = new Intent(CadastroActivity.this, LoginActivity.class);
+                startActivity(iTelaLogin);
+
             } catch (Exception e) {
                 AlertDialog.Builder dialogo = new
                         AlertDialog.Builder(CadastroActivity.this);
@@ -119,6 +120,8 @@ public class CadastroActivity extends AppCompatActivity {
                         .show();
             }
         });
+
+
     }
     public  void MostrarMensagem( String  str){
 
