@@ -9,12 +9,14 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         tools:ignore="SpeakableTextPresentCheck">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/btn_voltar"
@@ -40,7 +42,7 @@
                 app:fontFamily="@font/comfortaa" />
 
             <EditText
-                android:id="@+id/input_nome"
+                android:id="@+id/input_nomea"
                 android:layout_width="389dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="10dp"
@@ -50,6 +52,7 @@
                 android:ems="10"
                 android:fontFamily="@font/comfortaa"
                 android:hint="@string/nome"
+
                 android:importantForAutofill="no"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
@@ -58,7 +61,7 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/input_email"
+                android:id="@+id/input_emaila"
                 android:layout_width="389dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="10dp"
@@ -68,6 +71,7 @@
                 android:ems="10"
                 android:fontFamily="@font/comfortaa"
                 android:hint="@string/email"
+
                 android:importantForAutofill="no"
                 android:inputType="textEmailAddress"
                 android:minHeight="48dp"
@@ -76,7 +80,7 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/input_senha2"
+                android:id="@+id/input_senha2a"
                 android:layout_width="389dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="10dp"
@@ -86,15 +90,15 @@
                 android:ems="10"
                 android:fontFamily="@font/comfortaa"
                 android:hint="@string/senha"
+                android:importantForAutofill="no"
                 android:inputType="textPassword"
                 android:minHeight="48dp"
                 android:padding="18dp"
                 android:textColorHint="#494646"
-                android:textSize="15sp"
-                android:autofillHints="" />
+                android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/input_idade"
+                android:id="@+id/input_idadea"
                 android:layout_width="389dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="10dp"
@@ -104,12 +108,12 @@
                 android:ems="10"
                 android:fontFamily="@font/comfortaa"
                 android:hint="@string/idade"
+                android:importantForAutofill="no"
                 android:inputType="number"
                 android:minHeight="48dp"
                 android:padding="18dp"
                 android:textColorHint="#494646"
-                android:textSize="15sp"
-                android:autofillHints="" />
+                android:textSize="15sp" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/textViewtext"
@@ -125,7 +129,7 @@
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/input_UBS"
+                android:id="@+id/input_UBSa"
                 android:layout_width="389dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="10dp"
@@ -135,15 +139,15 @@
                 android:ems="10"
                 android:fontFamily="@font/comfortaa"
                 android:hint="@string/nome_da_ubs"
+                android:importantForAutofill="no"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
                 android:padding="18dp"
                 android:textColorHint="#494646"
-                android:textSize="15sp"
-                android:autofillHints="" />
+                android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/input_marca"
+                android:id="@+id/input_marcaa"
                 android:layout_width="389dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="10dp"
@@ -153,14 +157,15 @@
                 android:ems="10"
                 android:fontFamily="@font/comfortaa"
                 android:hint="@string/marca"
+                android:importantForAutofill="no"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
                 android:padding="18dp"
                 android:textColorHint="#494646"
-                android:textSize="15sp"
-                android:autofillHints="" />
+                android:textSize="15sp" />
+
             <EditText
-                android:id="@+id/input_dose"
+                android:id="@+id/input_dosea"
                 android:layout_width="389dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="10dp"
@@ -170,15 +175,15 @@
                 android:ems="10"
                 android:fontFamily="@font/comfortaa"
                 android:hint="@string/dose_tomada"
+                android:importantForAutofill="no"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
                 android:padding="18dp"
                 android:textColorHint="#494646"
-                android:textSize="15sp"
-                android:autofillHints=""/>
+                android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/input_data"
+                android:id="@+id/input_dataa"
                 android:layout_width="389dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="10dp"
@@ -188,12 +193,12 @@
                 android:ems="10"
                 android:fontFamily="@font/comfortaa"
                 android:hint="@string/data"
+                android:importantForAutofill="no"
                 android:inputType="date"
                 android:minHeight="48dp"
                 android:padding="18dp"
                 android:textColorHint="#494646"
-                android:textSize="15sp"
-                android:autofillHints="" />
+                android:textSize="15sp" />
 
             <Button
                 android:id="@+id/btn_editar"

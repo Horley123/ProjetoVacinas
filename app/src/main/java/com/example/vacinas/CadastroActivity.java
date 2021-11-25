@@ -8,12 +8,9 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.Spinner;
 
 public class CadastroActivity extends AppCompatActivity {
 
@@ -47,16 +44,16 @@ public class CadastroActivity extends AppCompatActivity {
                         "nomeUbs text,marca text, dose text, data text, idR text )");
 
 
-                nome = findViewById(R.id.input_nome) ;
-                email =  findViewById(R.id.input_email) ;
-                idade =  findViewById(R.id.input_idade) ;
-                senha =  findViewById(R.id.input_senha2) ;
+                nome = findViewById(R.id.input_nomea) ;
+                email =  findViewById(R.id.input_emaila) ;
+                idade =  findViewById(R.id.input_idadea) ;
+                senha =  findViewById(R.id.input_senha2a) ;
 
 
-                ubs =  findViewById(R.id.input_UBS) ;
-                marca = findViewById(R.id.input_marca) ;
-                dose =  findViewById(R.id.input_dose) ;
-                data = findViewById(R.id.input_data) ;
+                ubs =  findViewById(R.id.input_UBSa) ;
+                marca = findViewById(R.id.input_marcaa) ;
+                dose =  findViewById(R.id.input_dosea) ;
+                data = findViewById(R.id.input_dataa) ;
 
 
                 String Cnome = nome.getText().toString();
@@ -101,12 +98,12 @@ public class CadastroActivity extends AppCompatActivity {
                 }
 
 
-                AlertDialog.Builder dialogo = new
-                        AlertDialog.Builder(CadastroActivity.this);
-                dialogo.setTitle("Aviso")
-                        .setMessage("Banco de dados criado com sucesso !!!!")
-                        .setNeutralButton("OK", null)
-                        .show();
+//                AlertDialog.Builder dialogo = new
+//                        AlertDialog.Builder(CadastroActivity.this);
+//                dialogo.setTitle("Aviso")
+//                        .setMessage("Banco de dados criado com sucesso !!!!")
+//                        .setNeutralButton("OK", null)
+//                        .show();
 
                 Intent iTelaCadastrado = new Intent(CadastroActivity.this, MainActivityUser.class);
                 startActivity(iTelaCadastrado);

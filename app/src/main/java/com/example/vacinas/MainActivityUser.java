@@ -34,6 +34,7 @@ public class MainActivityUser extends AppCompatActivity {
         nome = findViewById(R.id.row_nome);
         email =  findViewById(R.id.row_email);
         idade =  findViewById(R.id.row_idade);
+
         ubs = findViewById(R.id.row_ubs);
         marca = findViewById(R.id.row_marca);
         data =  findViewById(R.id.row_data);
@@ -96,6 +97,17 @@ public class MainActivityUser extends AppCompatActivity {
 
         }
 
+
+        btnEditar.setOnClickListener(c ->{
+            try{
+                iTelaEditar = new Intent(MainActivityUser.this, EditarActivity.class);
+                iTelaEditar.putExtra("idUser",idUser);
+                startActivity(iTelaEditar);
+
+            }catch (Exception e){
+
+            }
+        });
         btnExcluir.setOnClickListener(v -> {
             try{
                 db.delete("usuarios","idUser = ?", new String[]{String.valueOf(idUser)});
